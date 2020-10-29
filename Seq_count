@@ -1,0 +1,4 @@
+filename = "~./Desktop/rosalind_dna.txt"
+filep = open(filename,'r');
+data = filep.read();
+print(data)

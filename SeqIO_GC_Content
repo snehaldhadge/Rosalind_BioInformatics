@@ -1,0 +1,5 @@
+from Bio import SeqIO
+from Bio.SeqUtils import GC
+
+print(max(((line.id, GC(line.seq)) for line in SeqIO.parse("/Users/snehalilawe/Desktop/Rosalind_BioInformatics/rosalind_gc.txt", "fasta")),
+          key=lambda x: x[1]))
